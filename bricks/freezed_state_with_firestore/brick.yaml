@@ -1,5 +1,5 @@
 name: freezed_state_with_firestore
-description: A new brick created with the Mason CLI.
+description: brick for creating freezed model class with methods for firestore
 
 version: 0.1.0+1
 
