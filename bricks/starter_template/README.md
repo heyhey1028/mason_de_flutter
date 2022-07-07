@@ -10,3 +10,4 @@ brick includes below integrations.
   - `riverpod`
   - `freezed`
   - `go_router`
+  - `firebase_core`
