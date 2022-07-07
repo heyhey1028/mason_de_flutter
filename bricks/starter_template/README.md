@@ -6,3 +6,6 @@ brick includes below integrations.
 - add `pubspec.lock`, `.fvm/flutter_sdk` to .gitignore
 - add pedantic_mono (linter)
 - add basic_ci (github actions workflow)
+- add below packages
+  - `riverpod`
+  - `freezed`
