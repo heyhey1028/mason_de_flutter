@@ -14,10 +14,13 @@ dependencies:
   firebase_core: ^1.19.1
   flutter:
     sdk: flutter
+  flutter_localizations: # Reference:https://zenn.dev/aryzae/articles/0555959ac3800e
+    sdk: flutter  
   flutter_riverpod: ^1.0.4
   freezed_annotation: ^2.0.3
   gap: ^2.0.0
   go_router: ^4.1.0
+  intl: "^0.17.0" # Reference: https://zenn.dev/aryzae/articles/0555959ac3800e
   nil: ^1.1.1 # Reference: https://zenn.dev/wakanao/articles/078809dce5fa74
 
 dev_dependencies:
@@ -30,4 +33,5 @@ dev_dependencies:
 
 
 flutter:
+  generate: true  # Reference: https://zenn.dev/aryzae/articles/0555959ac3800e
   uses-material-design: true

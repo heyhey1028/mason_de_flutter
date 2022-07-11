@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:starter_template/app_router.dart';
+import 'package:starter_template/l10n/l10n.dart';
 
 Future<void> main() async {
   // NOTE: comment out after integration
@@ -24,6 +25,10 @@ class MyApp extends ConsumerWidget {
       routeInformationProvider: router.routeInformationProvider,
       routeInformationParser: router.routeInformationParser,
       routerDelegate: router.routerDelegate,
+      // Localizations
+      // Ref: https://zenn.dev/aryzae/articles/0555959ac3800e
+      localizationsDelegates: L10n.localizationsDelegates,
+      supportedLocales: L10n.supportedLocales,
     );
   }
 }
