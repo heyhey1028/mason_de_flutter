@@ -11,4 +11,5 @@ brick includes below integrations.
   - `freezed`
   - `go_router`
   - `firebase_core`
+  - `grinder`
 - add localization
