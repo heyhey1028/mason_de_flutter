@@ -1,0 +1,14 @@
+name: crisp_screen_template
+description: crisp template for new screen and it's viewmodel using riverpod
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.26 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: Screen name
+    default: home
+    prompt: What is your screen name?
