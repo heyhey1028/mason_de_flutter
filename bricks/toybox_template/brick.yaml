@@ -1,0 +1,14 @@
+name: toybox_template
+description: A template brick for git repository flutter-toybox
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.26 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: Project name
+    default: Sample
+    prompt: What is the project name (in snake case please)?
