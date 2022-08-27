@@ -3,6 +3,7 @@ import 'main_drawer.dart';
 
 class AppScaffold extends StatelessWidget {
   AppScaffold({
+    super.key,
     required this.body,
     this.floatingActionButton,
     this.title,
@@ -13,7 +14,7 @@ class AppScaffold extends StatelessWidget {
   final Widget? floatingActionButton;
   final Widget? title;
   final MaterialColor color;
-  final _scaffoldKey = new GlobalKey<ScaffoldState>();
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +24,15 @@ class AppScaffold extends StatelessWidget {
         title: title,
         elevation: 0,
         backgroundColor: Colors.transparent,
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: const IconThemeData(color: Colors.white),
         leading: IconButton(
-          icon: Icon(Icons.menu, size: 40), // change this size and style
+          icon: const Icon(Icons.menu, size: 40), // change this size and style
           onPressed: () => _scaffoldKey.currentState?.openDrawer(),
         ),
       ),
-      drawer: MainDrawer(),
+      drawer: const MainDrawer(),
       extendBodyBehindAppBar: true,
-      body: Container(
+      body: DecoratedBox(
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
