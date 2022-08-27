@@ -8,7 +8,7 @@ class MainDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 240,
       child: Drawer(
         child: ListView(
@@ -19,13 +19,13 @@ class MainDrawer extends StatelessWidget {
                   CircleAvatar(
                     backgroundColor: Colors.grey[100]!,
                     foregroundImage:
-                      const  AssetImage('assets/images/flutter_logo.png'),
+                        const AssetImage('assets/images/flutter_logo.png'),
                     radius: 50,
                   ),
-                 const SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                const  Text('FLUTTER TOY BOX'),
+                  const Text('FLUTTER TOY BOX'),
                 ],
               ),
             ),
@@ -33,7 +33,7 @@ class MainDrawer extends StatelessWidget {
               color: Colors.lightBlue[100]!,
               icon: const Icon(Icons.home),
               title: 'HOME',
-              navigateTo: MyHomePage(),
+              navigateTo: const MyHomePage(),
             ),
             DrawerTile(
               color: Colors.indigo[100]!,
@@ -77,9 +77,9 @@ class DrawerTile extends StatelessWidget {
         trailing: const Icon(Icons.chevron_right_rounded),
         onTap: () {
           Navigator.of(context).pop();
-          Navigator.of(context).pushReplacement<void,void>(
+          Navigator.of(context).pushReplacement<void, void>(
             MaterialPageRoute(
-              builder: (_) => navigateTo ?? MyHomePage(),
+              builder: (_) => navigateTo ?? const MyHomePage(),
             ),
           );
         },
