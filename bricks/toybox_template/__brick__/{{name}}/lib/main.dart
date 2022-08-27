@@ -1,4 +1,4 @@
-import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 // import 'package:{{name}}/firebase_options.dart';
 import 'package:{{name}}/widgets/app_scaffold.dart';
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:const MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
