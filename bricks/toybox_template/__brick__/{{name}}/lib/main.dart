@@ -1,7 +1,7 @@
 // import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-// import 'package:{{name}}/firebase_options.dart';
-import 'package:{{name}}/widgets/app_scaffold.dart';
+// import './firebase_options.dart';
+import './widgets/app_scaffold.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
