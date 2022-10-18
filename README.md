@@ -18,6 +18,15 @@ tree
  └── brick.yaml
 ```
 
+## Register brick
+`mason add -g <brick name>` will register your brick globally. 
+
+## Using bricks
+
+```bash
+$ mason make <brick name>
+```
+
 ### Reference:
 https://zenn.dev/razokulover/articles/d0453fd2bbeffc [JA]
 https://github.com/felangel/mason/tree/master/packages/mason_cli#readme [EN]
