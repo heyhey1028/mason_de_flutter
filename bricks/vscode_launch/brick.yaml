@@ -1,0 +1,14 @@
+name: vscode_launch
+description: A brick for creating vscode launch.json template
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.26 <0.1.0"
+
+vars:
+  launch_name:
+    type: string
+    description: Launch command name
+    default: Dev(Local)
+    prompt: What is your initial launch command name?
