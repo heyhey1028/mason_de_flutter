@@ -19,7 +19,7 @@ tree
 ```
 
 ## Register brick
-`mason add -g <brick name>` will register your brick globally. 
+`mason add -g <brick name> --path bricks/<brick name>` will register your brick globally. 
 
 ## Using bricks
 
