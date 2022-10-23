@@ -6,4 +6,4 @@ add_bricks:
 	mason add -g freezed_state_with_firestore --path bricks/freezed_state_with_firestore
 	mason add -g toybox_template --path bricks/toybox_template
 	mason add -g vscode_launch --path bricks/vscode_launch
-	mason add -g mason_project_template --path bricks/mason_project_template
+	mason add -g melos_project_template --path bricks/melos_project_template
