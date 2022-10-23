@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_toybox/widgets/app_scaffold.dart';
+import 'package:{{name}}/widgets/app_scaffold.dart';
 
 class SampleScreen extends ConsumerWidget {
   const SampleScreen({super.key});
